@@ -87,7 +87,6 @@ class SourceClassLoaderTest {
                 }
             }
             action(paths)
-            paths.forEach { Files.deleteIfExists(it) }
         }
 
     }

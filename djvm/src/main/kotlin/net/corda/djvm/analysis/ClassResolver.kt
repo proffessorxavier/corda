@@ -91,7 +91,7 @@ class ClassResolver(
      */
     private fun resolveName(name: String): String {
         // Currently, whitelisted classes are not transformed and put into the sandbox namespace.
-        return if (name.isBlank() || isPinnedClass(name)) {
+        return if (isPinnedClass(name)) {
             name
         } else {
             "$sandboxPrefix$name"
